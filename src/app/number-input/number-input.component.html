@@ -1,0 +1,28 @@
+<div>
+  <div class="col">
+    <div class="col">
+      <label id="labelFirst" for="">First Number</label>
+    </div>
+    <div class="col">
+      <input
+        (input)="numberInput(firstNumber.value, 0)"
+        type="number"
+        #firstNumber
+        id = "first"
+      />
+    </div>
+  </div>
+  <div class="col mt-1">
+    <div class="col">
+      <label id = "labelSecond"for="">Second Number</label>
+    </div>
+    <div class="col">
+      <input
+        (input)="numberInput(secondNumber.value, 1)"
+        type="number"
+        #secondNumber
+        id = "second"
+      />
+    </div>
+  </div>
+</div>
